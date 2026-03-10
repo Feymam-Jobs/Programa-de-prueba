@@ -1,4 +1,7 @@
 # Definición de variables para notas
+
+
+
 NOTA_MINIMA = 0
 NOTA_MAXIMA = 100
 
