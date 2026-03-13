@@ -44,6 +44,22 @@
 
 #    print(VERDE +"El cliente a ordenado los siguientes sabores: " + RESET + {2: CHOCOLATE + "Chocolate" + RESET, 3: VAINILLA + "Vainilla" + RESET, 4: FRESA + "Fresa" + RESET}.get(sabor, "Opción no válida"))
 
+# Programa Gisnasio 
 
+def validar_entrada(edad):
+    "Función para validar que la edad ingresada sea un número entero positivo"
+    if edad < 13:
+        print("Lo siento, no puedes ingresar al gimnasio. Debes tener al menos 13 años.")
+        return False
+    elif edad >=20:
+        print("ERES CLASE SENIOR, puedes ingresar al gimnasio.")
+        return False
+    else:
+        print("¡Bienvenido al gimnasio! Puedes ingresar.")
+        return True
+    
+edad = int(input("Ingrese su edad: "))
+
+validar_entrada(edad)
 
    
